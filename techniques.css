@@ -209,6 +209,7 @@
     padding: 60px 20px;
     background: url('https://i.imgur.com/lj9UynG.jpg') no-repeat center;
     background-size: cover;
+    background-color: #333;
     color: #fff;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
   }
