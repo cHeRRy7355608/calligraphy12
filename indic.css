@@ -202,7 +202,6 @@
 
 
 
-/* hero section */
 
 
 
@@ -214,101 +213,8 @@
 
 
 
-
-
-  .hero {
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 6rem 2rem;
-    color: #fefefe;
-    border-bottom: 2px solid #d4af37;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 10px #d4af37;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-  }
-  
-  .styles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 3rem 2rem;
-  }
-  
-  .style-card {
-    background-color: #1a1a1a;
-    border: 1px solid #d4af37;
-    border-radius: 12px;
-    width: 300px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 0 10px #d4af37;
-    transition: transform 0.3s ease;
-    color: white;
-  }
-  
-  .style-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .style-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .style-card h2 {
-    color: #d4af37;
-    margin-bottom: 0.5rem;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer Section */
-.footer {
+  /* Footer Section */
+  .footer {
     background: linear-gradient(to right, #000000, #1c1c1c);
     padding: 50px 30px;
     color: var(--white);
@@ -497,3 +403,104 @@
     border: 2px solid #d4af37;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
   }
+  
+  /* Optional: Category Color Backgrounds */
+  .category-card.arabic {
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  
+
+
+
+
+
+
+  :root {
+    --gold: #d4af37;
+    --black: #111111;
+    --white: #fefefe;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+  }
+/* Hero */
+.hero {
+
+  color: var(--white);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  color: var(--gold);
+  text-shadow: 0 0 20px var(--gold);
+}
+
+.hero p {
+  font-size: 22px;
+  margin-top: 20px;
+  color: var(--white);
+}
+
+/* Indic Section */
+.indic-section {
+  padding: 80px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.indic-section h2 {
+  font-size: 36px;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.indic-section p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #222;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 300px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px var(--gold);
+}
+
+.card h3 {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+

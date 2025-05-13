@@ -202,7 +202,6 @@
 
 
 
-/* hero section */
 
 
 
@@ -214,101 +213,8 @@
 
 
 
-
-
-  .hero {
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 6rem 2rem;
-    color: #fefefe;
-    border-bottom: 2px solid #d4af37;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 10px #d4af37;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-  }
-  
-  .styles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 3rem 2rem;
-  }
-  
-  .style-card {
-    background-color: #1a1a1a;
-    border: 1px solid #d4af37;
-    border-radius: 12px;
-    width: 300px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 0 10px #d4af37;
-    transition: transform 0.3s ease;
-    color: white;
-  }
-  
-  .style-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .style-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .style-card h2 {
-    color: #d4af37;
-    margin-bottom: 0.5rem;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer Section */
-.footer {
+  /* Footer Section */
+  .footer {
     background: linear-gradient(to right, #000000, #1c1c1c);
     padding: 50px 30px;
     color: var(--white);
@@ -497,3 +403,76 @@
     border: 2px solid #d4af37;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
   }
+  
+  /* Optional: Category Color Backgrounds */
+  .category-card.arabic {
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  
+
+
+  .sparkle {
+    background: linear-gradient(180deg, #111111, #1a1a1a);
+    box-shadow: inset 0 0 50px rgba(212, 175, 55, 0.1);
+    padding: 60px 30px;
+    position: relative;
+  }
+
+  .sparkle h1 {
+    color: var(--gold);
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px var(--gold);
+  }
+
+  .sparkle p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.7;
+    color: var(--white);
+  }
+
+  .greek-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .greek-gallery img {
+    width: 100%;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .greek-gallery img:hover {
+    transform: scale(1.05);
+  }
+
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    .navbar a {
+      margin: 10px 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
